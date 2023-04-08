@@ -1,0 +1,104 @@
+{
+  "graphName" : "mall-pojo",
+  "artifacts" : [ {
+    "id" : "cn.org.sqx:mall-pojo:jar",
+    "numericId" : 1,
+    "groupId" : "cn.org.sqx",
+    "artifactId" : "mall-pojo",
+    "version" : "1.0-SNAPSHOT",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.projectlombok:lombok:jar",
+    "numericId" : 2,
+    "groupId" : "org.projectlombok",
+    "artifactId" : "lombok",
+    "version" : "1.18.22",
+    "optional" : true,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.hibernate.validator:hibernate-validator:jar",
+    "numericId" : 3,
+    "groupId" : "org.hibernate.validator",
+    "artifactId" : "hibernate-validator",
+    "version" : "6.2.0.Final",
+    "optional" : false,
+    "scopes" : [ "provided" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "jakarta.validation:jakarta.validation-api:jar",
+    "numericId" : 4,
+    "groupId" : "jakarta.validation",
+    "artifactId" : "jakarta.validation-api",
+    "version" : "2.0.2",
+    "optional" : false,
+    "scopes" : [ "provided" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.jboss.logging:jboss-logging:jar",
+    "numericId" : 5,
+    "groupId" : "org.jboss.logging",
+    "artifactId" : "jboss-logging",
+    "version" : "3.4.2.Final",
+    "optional" : false,
+    "scopes" : [ "provided" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "com.fasterxml:classmate:jar",
+    "numericId" : 6,
+    "groupId" : "com.fasterxml",
+    "artifactId" : "classmate",
+    "version" : "1.5.1",
+    "optional" : false,
+    "scopes" : [ "provided" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework.boot:spring-boot-starter-validation:jar",
+    "numericId" : 7,
+    "groupId" : "org.springframework.boot",
+    "artifactId" : "spring-boot-starter-validation",
+    "version" : "2.5.4",
+    "optional" : false,
+    "scopes" : [ "provided" ],
+    "types" : [ "jar" ]
+  } ],
+  "dependencies" : [ {
+    "from" : "cn.org.sqx:mall-pojo:jar",
+    "to" : "org.projectlombok:lombok:jar",
+    "numericFrom" : 0,
+    "numericTo" : 1,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.hibernate.validator:hibernate-validator:jar",
+    "to" : "jakarta.validation:jakarta.validation-api:jar",
+    "numericFrom" : 2,
+    "numericTo" : 3,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.hibernate.validator:hibernate-validator:jar",
+    "to" : "org.jboss.logging:jboss-logging:jar",
+    "numericFrom" : 2,
+    "numericTo" : 4,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.hibernate.validator:hibernate-validator:jar",
+    "to" : "com.fasterxml:classmate:jar",
+    "numericFrom" : 2,
+    "numericTo" : 5,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework.boot:spring-boot-starter-validation:jar",
+    "to" : "org.hibernate.validator:hibernate-validator:jar",
+    "numericFrom" : 6,
+    "numericTo" : 2,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "cn.org.sqx:mall-pojo:jar",
+    "to" : "org.springframework.boot:spring-boot-starter-validation:jar",
+    "numericFrom" : 0,
+    "numericTo" : 6,
+    "resolution" : "INCLUDED"
+  } ]
+}

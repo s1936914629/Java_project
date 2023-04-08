@@ -1,0 +1,164 @@
+{
+  "graphName" : "mall-common",
+  "artifacts" : [ {
+    "id" : "cn.org.sqx:mall-common:jar",
+    "numericId" : 1,
+    "groupId" : "cn.org.sqx",
+    "artifactId" : "mall-common",
+    "version" : "1.0-SNAPSHOT",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.projectlombok:lombok:jar",
+    "numericId" : 2,
+    "groupId" : "org.projectlombok",
+    "artifactId" : "lombok",
+    "version" : "1.18.22",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework:spring-web:jar",
+    "numericId" : 3,
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-web",
+    "version" : "5.3.9",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework:spring-beans:jar",
+    "numericId" : 4,
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-beans",
+    "version" : "5.3.9",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework:spring-core:jar",
+    "numericId" : 5,
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-core",
+    "version" : "5.3.9",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework:spring-jcl:jar",
+    "numericId" : 6,
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-jcl",
+    "version" : "5.3.9",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework.boot:spring-boot-starter-web:jar",
+    "numericId" : 7,
+    "groupId" : "org.springframework.boot",
+    "artifactId" : "spring-boot-starter-web",
+    "version" : "2.5.4",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework:spring-webmvc:jar",
+    "numericId" : 8,
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-webmvc",
+    "version" : "5.3.9",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework:spring-aop:jar",
+    "numericId" : 9,
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-aop",
+    "version" : "5.3.9",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework:spring-context:jar",
+    "numericId" : 10,
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-context",
+    "version" : "5.3.9",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  }, {
+    "id" : "org.springframework:spring-expression:jar",
+    "numericId" : 11,
+    "groupId" : "org.springframework",
+    "artifactId" : "spring-expression",
+    "version" : "5.3.9",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  } ],
+  "dependencies" : [ {
+    "from" : "cn.org.sqx:mall-common:jar",
+    "to" : "org.projectlombok:lombok:jar",
+    "numericFrom" : 0,
+    "numericTo" : 1,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework:spring-web:jar",
+    "to" : "org.springframework:spring-beans:jar",
+    "numericFrom" : 2,
+    "numericTo" : 3,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework:spring-core:jar",
+    "to" : "org.springframework:spring-jcl:jar",
+    "numericFrom" : 4,
+    "numericTo" : 5,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework:spring-web:jar",
+    "to" : "org.springframework:spring-core:jar",
+    "numericFrom" : 2,
+    "numericTo" : 4,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework.boot:spring-boot-starter-web:jar",
+    "to" : "org.springframework:spring-web:jar",
+    "numericFrom" : 6,
+    "numericTo" : 2,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework:spring-webmvc:jar",
+    "to" : "org.springframework:spring-aop:jar",
+    "numericFrom" : 7,
+    "numericTo" : 8,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework:spring-webmvc:jar",
+    "to" : "org.springframework:spring-context:jar",
+    "numericFrom" : 7,
+    "numericTo" : 9,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework:spring-webmvc:jar",
+    "to" : "org.springframework:spring-expression:jar",
+    "numericFrom" : 7,
+    "numericTo" : 10,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "org.springframework.boot:spring-boot-starter-web:jar",
+    "to" : "org.springframework:spring-webmvc:jar",
+    "numericFrom" : 6,
+    "numericTo" : 7,
+    "resolution" : "INCLUDED"
+  }, {
+    "from" : "cn.org.sqx:mall-common:jar",
+    "to" : "org.springframework.boot:spring-boot-starter-web:jar",
+    "numericFrom" : 0,
+    "numericTo" : 6,
+    "resolution" : "INCLUDED"
+  } ]
+}

@@ -1,0 +1,29 @@
+{
+  "graphName" : "mall-product",
+  "artifacts" : [ {
+    "id" : "cn.org.sqx:mall-product:pom",
+    "numericId" : 1,
+    "groupId" : "cn.org.sqx",
+    "artifactId" : "mall-product",
+    "version" : "1.0-SNAPSHOT",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "pom" ]
+  }, {
+    "id" : "cn.org.sqx:mall-pojo:jar",
+    "numericId" : 2,
+    "groupId" : "cn.org.sqx",
+    "artifactId" : "mall-pojo",
+    "version" : "1.0-SNAPSHOT",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "jar" ]
+  } ],
+  "dependencies" : [ {
+    "from" : "cn.org.sqx:mall-product:pom",
+    "to" : "cn.org.sqx:mall-pojo:jar",
+    "numericFrom" : 0,
+    "numericTo" : 1,
+    "resolution" : "INCLUDED"
+  } ]
+}

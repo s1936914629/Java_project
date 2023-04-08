@@ -1,0 +1,13 @@
+{
+  "graphName" : "mall-server",
+  "artifacts" : [ {
+    "id" : "cn.org.sqx:mall-server:pom",
+    "numericId" : 1,
+    "groupId" : "cn.org.sqx",
+    "artifactId" : "mall-server",
+    "version" : "1.0-SNAPSHOT",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "pom" ]
+  } ]
+}

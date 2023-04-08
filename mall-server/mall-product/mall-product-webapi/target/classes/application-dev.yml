@@ -1,0 +1,19 @@
+# 连接数据库的配置信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://124.220.169.221:3306/mall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+  redis:
+    host: 124.220.169.221
+    password: 123456
+
+# 日志的显示级别
+logging:
+  level:
+    cn:
+      org:
+        sqx:
+          mall: trace

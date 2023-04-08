@@ -1,0 +1,13 @@
+{
+  "graphName" : "shanjupay",
+  "artifacts" : [ {
+    "id" : "com.shanjupay:shanjupay:pom",
+    "numericId" : 1,
+    "groupId" : "com.shanjupay",
+    "artifactId" : "shanjupay",
+    "version" : "1.0-SNAPSHOT",
+    "optional" : false,
+    "scopes" : [ "compile" ],
+    "types" : [ "pom" ]
+  } ]
+}
